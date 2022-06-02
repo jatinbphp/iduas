@@ -9,7 +9,7 @@ export class AppComponent
 {
   public appPages = [
     { title: 'Home', url: '/tabs/home', icon: 'home', categories: []},//[0]
-    { title: 'One', url: '/', icon: 'home', categories: []},//[1]
+    { title: 'Login', url: '/sign-in', icon: 'home', categories: []},//[1]
     { title: 'Two', url: '/', icon: 'home', categories: []},//[2]
     { title: 'Three', url: '/', icon: 'home', categories: []},//[3]
     { title: 'Three', url: '/', icon: 'home', categories: []},//[4]
