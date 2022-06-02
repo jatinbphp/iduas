@@ -1,1 +1,20 @@
-
+ion-tabs {
+	ion-tab-bar {
+		--background: #02244f;
+		--border: 0px !important;
+		ion-tab-button {
+			--background: transparent;
+			img {
+			    max-width: 100%;
+			    max-height: 100%;
+			    width: 24px;
+			    height: 24px;
+			    object-fit: contain;
+			    object-position: center;
+			}
+			&.tab-selected {
+				img {}
+			}
+		}
+	}
+}

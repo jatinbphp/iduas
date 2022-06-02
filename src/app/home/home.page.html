@@ -1,20 +1,78 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" no-border class="ion-no-border most-use-header">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>     
+      <ion-menu-button auto-hide="false" slot="start">
+        <img class="logo-main" src="../../assets/images/Menu.png">
+      </ion-menu-button>     
     </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-chip>
+      <img src="../assets/images/Iduas-Logo.png">
+    </ion-chip>
+    <ion-button slot="end" class="profile">
+      <img src="../assets/images/User.png">
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="transparent-bck">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
+  </ion-header> -->
+  <ion-header no-border class="ion-no-border">
+    <ion-toolbar class="src-box">
+      <form class="search-form">
+        <ion-searchbar placeholder="Search Duas" type="search" autocomplete="off" autocorrect="off" spellcheck="false" name="search_text"></ion-searchbar>
+        <ion-button class="src-icon-btn">
+          <img src="../assets/images/Search-black.png">
+        </ion-button>
+        <!--<ion-button class="reset-icon-btn">
+          <ion-icon name="refresh-circle"></ion-icon>
+        </ion-button>-->
+      </form>
+    </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Home page"></app-explore-container>
+  <div class="mainContent">
+    <ion-grid class="img-cnt-sec">
+      <ion-row class="img-nm-box-list">
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/ramadhan.png">
+            <h3>Ramadhan</h3>
+          </div>
+        </ion-col>
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/muharram.png">
+            <h3>Muharram</h3>
+          </div>
+        </ion-col>
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/thursdays.png">
+            <h3>Thursdays</h3>
+          </div>
+        </ion-col>
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/zilhajj.png">
+            <h3>Zilhajj</h3>
+          </div>
+        </ion-col>
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/duas.png">
+            <h3>Duas for Deceased</h3>
+          </div>
+        </ion-col>
+        <ion-col class="img-nm-box-item">
+          <div class="img-nm-box-inner">
+            <img src="../assets/images/events.png">
+            <h3>Events</h3>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
