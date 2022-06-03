@@ -28,7 +28,7 @@ ion-content {
 					    border: 2px solid #dfdfdd;
 					    border-radius: 10px;
 					    margin: 0px 0px 16px;
-					    padding: 16px 16px 0px;
+					    padding: 16px 16px 6px;
 					    @media(max-width:410px) {
 					    	padding: 16px 16px 6px;
 					    }
@@ -71,7 +71,7 @@ ion-content {
 									flex-flow: row;
 									align-items: center;
 									justify-content: flex-start;
-									padding: 0px 20px 0px 0px;
+									padding: 0px 20px 10px 0px;
 									// &:last-child {
 									// 	padding: 0px;
 									// }

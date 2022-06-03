@@ -58,6 +58,9 @@
     --font-Poppins-Italic:'Poppins-Italic' ;
     --White: #fff ;
     --Black: #000 ;
+
+    /** theme-gradient **/
+    --theme-gradient: linear-gradient(0deg, #89c7fc 0%, #d4fefc 24%, #ffffff 100%);
 }
 
 ion-grid, ion-col {
@@ -98,7 +101,7 @@ ion-button {
 .transparent-bck {
     --background: transparent;
 }
-app-home, app-search {
+app-home, app-search, app-sign-in {
     background-image: url(assets/images/Splash-BG.png);
     background-position: center center;
     background-size: cover;

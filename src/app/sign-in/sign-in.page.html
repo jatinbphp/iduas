@@ -1,9 +1,63 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>sign-in</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-
+<ion-content class="transparent-bck">
+  <div class="login-main">
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12" class="mb-45 logo ion-text-center ion-no-padding">
+          <img src="../assets/images/Iduas-Logo.png">
+        </ion-col>
+        <!-- <ion-col size="2" class="close-icon">
+          <ion-icon name="close"></ion-icon>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+    <form>
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col size="12" class="ion-text-center ion-no-padding mb-30">
+            <h2>Member Login</h2>
+          </ion-col>
+          <ion-col size="6" class="ion-text-left ion-no-padding">
+            <ion-button class="border-btn">
+              <img src="../assets/images/facebook-icon1.png">
+            </ion-button>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right ion-no-padding">
+            <ion-button class="border-btn">
+              <img src="../assets/images/twitter-icon1.png">
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="ion-text-left ion-no-padding mb-20 mt-50">
+            <ion-label position="stacked">Email Address</ion-label>
+              <ion-input type="text" placeholder=""></ion-input>  
+          </ion-col>
+          <ion-col size="12" class="ion-text-left ion-no-padding mb-20">
+            <ion-label position="stacked">Password</ion-label>
+            <ion-input type="password" placeholder=""></ion-input>
+            <svg class="pw-show" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg>
+          </ion-col>
+          <ion-col size="6" class="ion-text-left align-center ion-no-padding">
+            <ion-checkbox></ion-checkbox>
+            <p>Remember me</p>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right ion-no-padding sml-dev-full-width">
+            <ion-router-link class="">Forgot password?</ion-router-link>
+          </ion-col>
+          <ion-col size="12" class="ion-text-center ion-no-padding mt-30">
+            <ion-button type="submit" class="log-btn">LOG IN</ion-button>
+          </ion-col>
+          <ion-col size="12" class="ion-text-center ion-no-padding mt-25">
+            <p>Don’t have a account? <ion-router-link>Sign up</ion-router-link></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
 </ion-content>
