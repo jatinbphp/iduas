@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'sign-in',
     loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)
+  },
+  {
+    path: 'recite-duas',
+    loadChildren: () => import('./recite-duas/recite-duas.module').then( m => m.ReciteDuasPageModule)
+  },
+  {
+    path: 'funeral-main',
+    loadChildren: () => import('./funeral-main/funeral-main.module').then( m => m.FuneralMainPageModule)
   }
 ];
 @NgModule({

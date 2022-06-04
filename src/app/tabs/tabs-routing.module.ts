@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../notifications/notifications.module').then(m => m.NotificationsPageModule)
       },
       {
+        path: 'recite-duas',
+        loadChildren: () => import('../recite-duas/recite-duas.module').then(m => m.ReciteDuasPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
