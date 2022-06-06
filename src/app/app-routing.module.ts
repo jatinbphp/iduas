@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'funeral-main',
     loadChildren: () => import('./funeral-main/funeral-main.module').then( m => m.FuneralMainPageModule)
+  },
+  {
+    path: 'after-death',
+    loadChildren: () => import('./after-death/after-death.module').then( m => m.AfterDeathPageModule)
   }
 ];
 @NgModule({

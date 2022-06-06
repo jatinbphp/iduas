@@ -28,6 +28,14 @@ const routes: Routes = [
         loadChildren: () => import('../recite-duas/recite-duas.module').then(m => m.ReciteDuasPageModule)
       },
       {
+        path: 'funeral-main',
+        loadChildren: () => import('../funeral-main/funeral-main.module').then(m => m.FuneralMainPageModule)
+      },
+      {
+        path: 'after-death',
+        loadChildren: () => import('../after-death/after-death.module').then(m => m.AfterDeathPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

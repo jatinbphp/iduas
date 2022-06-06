@@ -1,6 +1,16 @@
-<ion-header>
+<ion-header [translucent]="true" no-border class="ion-no-border most-use-header">
   <ion-toolbar>
-    <ion-title>recite-duas</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false" slot="start">
+        <img class="logo-main" src="../../assets/images/Menu.png">
+      </ion-menu-button>     
+    </ion-buttons>
+    <ion-chip>
+      <img src="../assets/images/Iduas-Logo.png">
+    </ion-chip>
+    <ion-button slot="end" class="profile">
+      <img src="../assets/images/User.png">
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
