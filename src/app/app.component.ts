@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController, ModalController, Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,9 @@ export class AppComponent
     { title: 'Four', url: '/', icon: 'home', categories: []},//[5]
     { title: 'Five', url: '/', icon: 'home', categories: []},//[6]
   ];
-  constructor() 
-  {}
+  constructor(public menu: MenuController) {}
+  closeMenu()
+  {
+    this.menu.close();
+  }
 }

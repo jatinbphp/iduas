@@ -26,6 +26,8 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :host(.item-label-stacked) .input-wrapper, 
 :host(.item-label-floating) .input-wrapper {
     flex: 1 1 0% !important;
@@ -38,6 +40,12 @@
 
 :host(.segment-button-layout-icon-top) .button-native {
     flex-direction: row !important;
+}
+
+:host(.button-solid) .button-native .button-inner {
+    flex-flow: unset !important;
+    flex-direction: unset !important;
+    flex-wrap: wrap !important;
 }
 
 ::slotted(ion-avatar) {
@@ -56,6 +64,7 @@
     --font-Poppins-Bold:'Poppins-Bold' ;
     --font-Poppins-Black:'Poppins-Black' ;
     --font-Poppins-Italic:'Poppins-Italic' ;
+    --font-Inter:'Inter';
     --White: #fff ;
     --Black: #000 ;
 
@@ -109,6 +118,14 @@ app-home, app-search, app-sign-in {
     background-color: #033467;
 }
 
+app-after-death, app-funeral-main, app-recite-duas {
+    background-image: url(assets/images/ifuneral-BG.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #033467;
+}
+
 .header-background {
     -webkit-backdrop-filter: unset !important;
     backdrop-filter: unset !important;
@@ -120,15 +137,15 @@ app-home, app-search, app-sign-in {
 }
 
 ion-header {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px !important;
-    --border-width: 0px !important;
-    --border-color: transparent !important;
-    --ion-border-color: transparent !important;
-    --ion-border-width: 0px !important;
     &.most-use-header {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: 0px !important;
+        --border-width: 0px !important;
+        --border-color: transparent !important;
+        --ion-border-color: transparent !important;
+        --ion-border-width: 0px !important;
         ion-toolbar {
             border: 0px !important;
             --border-width: 0px !important;
@@ -342,6 +359,23 @@ app-home {
                         width: 25px;
                         height: 25px;
                         object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+
+app-after-death {
+    ion-accordion-group {
+        ion-accordion {
+            ion-item {
+                &[slot="header"] {
+                    ion-icon {
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: var(--White);
+                        margin: 0px !important;
                     }
                 }
             }
