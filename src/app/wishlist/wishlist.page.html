@@ -1,34 +1,41 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" no-border class="ion-no-border most-use-header">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>     
+      <ion-menu-button auto-hide="false" slot="start">
+        <img class="logo-main" src="../../assets/images/Menu.png">
+      </ion-menu-button>     
     </ion-buttons>
-    <ion-title>
-      Wishlist
-    </ion-title>
+    <ion-chip>
+      <img src="../assets/images/Iduas-Logo.png">
+    </ion-chip>
+    <ion-button slot="end" class="profile">
+      <img src="../assets/images/User.png">
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="7">Love Me Like You Do - Ellie Goulding</ion-col>
-      <ion-col size="5">
-        <ion-button size="small" (click)="PlayMedia()" [disabled]="!is_playing_should_enabled">
-          <ion-icon name="play-circle" slot="icon-only"></ion-icon>
-        </ion-button>
-        <ion-button size="small" (click)="PauseMedia()" [disabled]="!is_pause_should_enabled">
-          <ion-icon name="pause-circle" slot="icon-only"></ion-icon>
-        </ion-button>
-        <ion-button size="small" (click)="StopMedia()" [disabled]="!is_stop_should_enabled">
-          <ion-icon name="stop-circle" slot="icon-only"></ion-icon>
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-grid style="padding-top:50px;">
-    <ion-row *ngFor="let poem of poemArray;let i = index;">
-      <ion-col size="12" [ngClass]="{'active' : poem.is_active==true}">{{poem.line}}</ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content class="transparent-bck">
+  <div class="mainContent">
+    <ion-grid class="PlayMedia">
+      <ion-row>
+        <ion-col size="7">Love Me Like You Do - Ellie Goulding</ion-col>
+        <ion-col size="5">
+          <ion-button size="small" (click)="PlayMedia()" [disabled]="!is_playing_should_enabled">
+            <ion-icon name="play-circle" slot="icon-only"></ion-icon>
+          </ion-button>
+          <ion-button size="small" (click)="PauseMedia()" [disabled]="!is_pause_should_enabled">
+            <ion-icon name="pause-circle" slot="icon-only"></ion-icon>
+          </ion-button>
+          <ion-button size="small" (click)="StopMedia()" [disabled]="!is_stop_should_enabled">
+            <ion-icon name="stop-circle" slot="icon-only"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="lyrics">
+      <ion-row *ngFor="let poem of poemArray;let i = index;">
+        <ion-col size="12" [ngClass]="{'active' : poem.is_active==true}">{{poem.line}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

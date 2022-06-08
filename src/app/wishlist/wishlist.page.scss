@@ -1,9 +1,95 @@
-ion-grid{
-    ion-row{
-      ion-col{
-        &.active{
-          font-weight: 600;
+ion-content {
+  .mainContent {
+    width: 100%;
+    padding: 15px 30px 30px;
+    ion-grid{
+      &.PlayMedia {
+        /*position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 15px 30px;
+        background: var(--theme-gradient);
+        z-index: 1;*/
+        padding: 0px 0px 20px;
+        margin: 0px 0px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        ion-row{
+          ion-col{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: var(--font-Poppins-SemiBold);
+            // color: #021b30;
+            color: var(--White);
+            @media(max-width:374px) {
+              font-size: 17px;
+              line-height: 21px;
+            }
+            &:last-child {
+              text-align: right;
+            }
+            ion-button {
+              --background-activated: transparent;
+              --background-focused: transparent;
+              --background-hover: transparent;
+              --background-activated-opacity: 1;
+              --background-focused-opacity: 1;
+              --background-hover-opacity: 1;
+              --color-activated: var(--White);
+              --color-focused: var(--White);
+              --color-hover: var(--White);
+              --background: transparent;
+              // color: #021b30;
+              color: var(--White);
+              --border-radius: 0;
+              --padding-start: 0;
+              --padding-end: 0;
+              padding: 0px;
+              margin: 0px 2.2px;
+              width: auto;
+              height: auto;
+              line-height: normal;
+              ion-icon {
+                font-size: 40px;
+                @media(max-width:374px) {
+                  font-size: 31px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.lyrics {
+        ion-row{
+          ion-col{
+            width: 100%;
+            padding: 0px;
+            margin: 0px 0px 15px;
+            font-size: 17px;
+            line-height: 21px;
+            font-family: var(--font-Poppins-Light);
+            color: #c8d4df;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+            @media(max-width:374px) {
+              font-size: 15px;
+              line-height: 19px;
+            }
+            &.active{
+              // font-weight: 600;
+              // font-family: var(--font-Poppins-Regular);
+              color: var(--White);
+              font-family: var(--font-Poppins-SemiBold);
+            }
+          }
         }
       }
     }
   }
+}
