@@ -67,9 +67,9 @@ ion-content {
         ion-row{
           ion-col{
             width: 100%;
-            padding: 0px;
+            padding: 10px;//BEFORE::0
             margin: 0px 0px 15px;
-            font-size: 17px;
+            font-size: 23px;//BEFORE:17px
             line-height: 21px;
             font-family: var(--font-Poppins-Light);
             color: #c8d4df;
@@ -77,6 +77,8 @@ ion-content {
             -moz-user-select: text;
             -ms-user-select: text;
             user-select: text;
+            border: 1px solid #ebebeb;//MAULIK::ADDED
+            border-radius: 15px;//MAULIK::ADDED
             @media(max-width:374px) {
               font-size: 15px;
               line-height: 19px;
