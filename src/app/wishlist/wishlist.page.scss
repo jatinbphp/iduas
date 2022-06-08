@@ -1,0 +1,9 @@
+ion-grid{
+    ion-row{
+      ion-col{
+        &.active{
+          font-weight: 600;
+        }
+      }
+    }
+  }
